@@ -6,6 +6,10 @@ a
 {"entityMap":{},"blocks":[{"key":"99n0j","text":"asdf","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":3,"length":1,"style":"BOLD"}],"entityRanges":[]}]}
 asd**f**
 
+>> Highlight
+{"entityMap":{},"blocks":[{"key":"99n0j","text":"asdf","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":3,"length":1,"style":"HIGHLIGHT"}],"entityRanges":[]}]}
+asd==f==
+
 >> Nested Inline Style
 {"entityMap":{},"blocks":[{"key":"9nc73","text":"BoldItalic","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":0,"length":10,"style":"BOLD"},{"offset":0,"length":10,"style":"ITALIC"}],"entityRanges":[]}]}
 _**BoldItalic**_

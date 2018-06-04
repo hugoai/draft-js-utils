@@ -21,9 +21,9 @@
   ],
   "author": "sstur@me.com",
   "license": "ISC",
-  "repository": "https://github.com/sstur/draft-js-utils/tree/master/packages/draft-js-import-markdown",
+  "repository": "https://github.com/hugoai/draft-js-utils/tree/master/packages/draft-js-import-markdown",
   "bugs": {
-    "url": "https://github.com/sstur/draft-js-utils/issues"
+    "url": "https://github.com/hugoai/draft-js-utils/issues"
   },
-  "homepage": "https://github.com/sstur/draft-js-utils/blob/master/packages/draft-js-import-markdown/README.md"
+  "homepage": "https://github.com/hugoai/draft-js-utils/blob/master/packages/draft-js-import-markdown/README.md"
 }

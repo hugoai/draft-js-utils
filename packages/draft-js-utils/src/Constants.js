@@ -28,6 +28,7 @@ export const INLINE_STYLE = {
   ITALIC: 'ITALIC',
   STRIKETHROUGH: 'STRIKETHROUGH',
   UNDERLINE: 'UNDERLINE',
+  HIGHLIGHT: 'HIGHLIGHT',
 };
 
 export default {

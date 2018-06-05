@@ -1,6 +1,6 @@
 {
-  "name": "draft-js-utils",
-  "version": "1.2.0",
+  "name": "@hugoai/draft-js-utils",
+  "version": "1.2.1",
   "description": "Collection of utilities for DraftJS",
   "main": "lib/main.js",
   "scripts": {

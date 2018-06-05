@@ -9,7 +9,7 @@ import {
 
 import type {ContentState, ContentBlock} from 'draft-js';
 
-const {BOLD, CODE, ITALIC, STRIKETHROUGH, UNDERLINE} = INLINE_STYLE;
+const {BOLD, CODE, ITALIC, STRIKETHROUGH, UNDERLINE, HIGHLIGHT} = INLINE_STYLE;
 
 const CODE_INDENT = '    ';
 
@@ -209,6 +209,9 @@ class MarkupGenerator {
             if (style.has(CODE)) {
               content =
                 blockType === BLOCK_TYPE.CODE ? content : '`' + content + '`';
+            }
+            if (style.has(HIGHLIGHT)) {
+              content = `==${content}==`;
             }
             return content;
           })

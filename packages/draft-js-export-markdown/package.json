@@ -8,7 +8,7 @@
     "watch": "babel src --watch --out-dir lib --ignore \"_*\""
   },
   "dependencies": {
-    "draft-js-utils": "^1.2.0"
+    "draft-js-utils": "git://github.com/hugoai/draft-js-utils/tree/master/packages/draft-js-utils"
   },
   "peerDependencies": {
     "draft-js": ">=0.10.0",
@@ -30,9 +30,9 @@
     }
   ],
   "license": "ISC",
-  "repository": "https://github.com/sstur/draft-js-utils/tree/master/packages/draft-js-export-markdown",
+  "repository": "https://github.com/hugoai/draft-js-utils/tree/master/packages/draft-js-export-markdown",
   "bugs": {
-    "url": "https://github.com/sstur/draft-js-utils/issues"
+    "url": "https://github.com/hugoai/draft-js-utils/issues"
   },
-  "homepage": "https://github.com/sstur/draft-js-utils/blob/master/packages/draft-js-export-markdown/README.md"
+  "homepage": "https://github.com/hugoai/draft-js-utils/blob/master/packages/draft-js-export-markdown/README.md"
 }

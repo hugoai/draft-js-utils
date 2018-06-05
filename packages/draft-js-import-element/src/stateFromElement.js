@@ -3,7 +3,7 @@
 import replaceTextWithMeta from './lib/replaceTextWithMeta';
 import {CharacterMetadata, ContentBlock, ContentState, genKey} from 'draft-js';
 import {List, Map, OrderedSet, Repeat, Seq} from 'immutable';
-import {BLOCK_TYPE, ENTITY_TYPE, INLINE_STYLE} from 'draft-js-utils';
+import {BLOCK_TYPE, ENTITY_TYPE, INLINE_STYLE} from '@hugoai/draft-js-utils';
 import {NODE_TYPE_ELEMENT, NODE_TYPE_TEXT} from 'synthetic-dom';
 import {
   INLINE_ELEMENTS,
@@ -529,6 +529,9 @@ function addStyleFromTagName(
     case 's':
     case 'del': {
       return styleSet.add(INLINE_STYLE.STRIKETHROUGH);
+    }
+    case 'mark': {
+      return styleSet.add(INLINE_STYLE.HIGHLIGHT);
     }
     default: {
       // Allow custom styles to be provided.

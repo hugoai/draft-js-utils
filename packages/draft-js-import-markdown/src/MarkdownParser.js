@@ -376,7 +376,7 @@ var inline = {
   nolink: /^!?\[((?:\[[^\]]*\]|[^\[\]])*)\]/,
   strong: /^__([\s\S]+?)__(?!_)|^\*\*([\s\S]+?)\*\*(?!\*)/,
   em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
-  highlight: /^==([\s\S]+?)==(?!=)/,
+  mark: /^==([\s\S]+?)==(?!=)/,
   code: /^(`+)\s*([\s\S]*?[^`])\s*\1(?!`)/,
   br: /^ {2,}\n(?!\s*$)/,
   del: noop,
@@ -536,10 +536,10 @@ InlineLexer.prototype.parse = function(src) {
       continue;
     }
 
-    // highlight
-    if ((cap = this.rules.highlight.exec(src))) {
+    // mark
+    if ((cap = this.rules.mark.exec(src))) {
       src = src.substring(cap[0].length);
-      out.appendChild(this.renderer.highlight(this.parse(cap[1])));
+      out.appendChild(this.renderer.mark(this.parse(cap[1])));
       continue;
     }
 
@@ -646,7 +646,7 @@ Renderer.prototype.codespan = function(text) {
   return new ElementNode('code', [], [new TextNode(text)]);
 };
 
-Renderer.prototype.highlight = function(childNode) {
+Renderer.prototype.mark = function(childNode) {
   return new ElementNode('mark', [], [childNode]);
 };
 

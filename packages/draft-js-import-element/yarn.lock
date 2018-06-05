@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@hugoai/draft-js-import-element@^1.2.3":
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@hugoai/draft-js-import-element/-/draft-js-import-element-1.2.3.tgz#8534a582df07be55253dbb2b1627301506884ec6"
-  dependencies:
-    "@hugoai/draft-js-utils" "^1.2.1"
-    synthetic-dom "^1.2.0"
-
 "@hugoai/draft-js-utils@^1.2.1":
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@hugoai/draft-js-utils/-/draft-js-utils-1.2.1.tgz#fa2be76a06544676839bd7c2ee5055bb30f338b8"

@@ -78,6 +78,21 @@ describe('stateFromMarkdown', () => {
       }],
     });
   });
+  it('should parse highlights', () => {
+    let contentState = stateFromMarkdown('==Test==');
+    let rawContentState = convertToRaw(contentState);
+    let blocks = removeKeys(rawContentState.blocks);
+    expect(blocks).toEqual([
+      {
+        text: 'Test',
+        type: 'unstyled',
+        data: {},
+        depth: 0,
+        inlineStyleRanges: [{offset: 0, length: 4, style: 'HIGHLIGHT'}],
+        entityRanges: [],
+      },
+    ]);
+  });
 });
 
 function removeKeys(blocks) {
